@@ -27,3 +27,30 @@ How to run the Basic Test with Allure report
 ```
  pytest tests/tests/crud/test_create_booking.py  --alluredir=allure_result -s
 ```
+
+
+### All the dependencies used
+- pip install pytest
+- pip install pytest-html
+- pip install allure-pytest
+- pip install requests
+- pip install pytest-xdist
+- pip install pytest-reportportal
+- pip install python-dotenv
+- pip list
+- pip install --upgrade pip
+
+### How to run the test case
+pytest "path"
+
+### How to run the mark test case
+pytest -m "smoke" "path"
+
+### How to run the pytest html report
+pytest --html=report.html "path"
+
+### How to run the Allure report
+pytest "path" --alluredir=allure_results
+
+### How to run the Allure report
+allure serve allure-results
