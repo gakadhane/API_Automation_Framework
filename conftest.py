@@ -5,11 +5,7 @@ from src.helpers.common_verification import *
 from src.helpers.payload_manager import *
 from src.utils.utils import Utils
 
-
-
-import allure
 import pytest
-
 
 @pytest.fixture(scope="session")
 def create_token():
